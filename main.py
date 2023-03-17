@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     return "Hello World"
-model = pickle.load(open('D:\\Hackathon\\student_placement_predictor\\adaboost_classifiermodel.pkl','rb'))
+model = pickle.load(open('adaboost_classifiermodel.pkl','rb'))
 
 
 @app.route('/predict',methods=['POST'])
